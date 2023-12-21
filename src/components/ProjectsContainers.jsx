@@ -3,12 +3,12 @@ const ProjectsContainers = () => {
     <section className="project-container">
       <h2>Projetos</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Meu trabalho abrange uma ampla gama de projetos, refletindo minha paixão por explorar diversas áreas da tecnologia. 
+      Desde projetos inovadores de IoT até a criação de interfaces front-end e desenvolvimento robusto de back-end, minha experiência se estende por múltiplos domínios. 
+      Além disso, aventuro-me em projetos de visual computing, mergulhando em soluções móveis desafiadoras e até mesmo em empreendimentos mais inusitados, como a criação de aplicativos Windows Form. 
+      Minha jornada pelo mundo da tecnologia é marcada por uma busca incessante pela inovação e pela excelência, abraçando a diversidade e a complexidade em cada 
       </p>
-      <a href="#" className="btn">
+      <a href="https://www.github.com/GuilhermeNobre" target="_blank" className="btn">
         Ver projetos
       </a>
     </section>

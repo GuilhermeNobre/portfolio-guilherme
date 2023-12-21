@@ -1,5 +1,6 @@
 import MainContent from './components/MainContent'
 import Sidebar from './components/Sidebar'
+import Wave from './components/Wave'
 import './styles/components/app.sass'
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
       <h1>Guilherme Dantas</h1>
       <Sidebar/>
       <MainContent/>
+      {/* <Wave/> */}
     </div>
+    
   )
 }
 

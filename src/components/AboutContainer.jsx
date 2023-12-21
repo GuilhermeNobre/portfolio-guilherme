@@ -3,16 +3,21 @@ const AboutContainer = () => {
     <section className="about-container">
         <h2>Sobre</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Sou um profissional tranquilo e comunicador, com habilidades
+            sólidas de trabalho em equipe. Com mais de 2 anos de experiência
+            como programador IoT, tenho uma paixão por tecnologia e
+            inovação. Minha expertise se estende ao desenvolvimento backend e
+            à construção de redes eficientes. 
         </p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Estou sempre em busca de
+          desafios que me permitam explorar novos horizontes na área de
+          desenvolvimento e contribuir para soluções tecnológicas
+          avançadas. Minha dedicação, combinada com minha capacidade
+          de colaborar efetivamente, me torna uma adição valiosa a qualquer
+          equipe de projeto. Estou motivado a continuar aprendendo e
+          crescendo no campo da tecnologia, enquanto aplico minhas
+          habilidades para criar impacto e alcançar resultados notáveis.
         </p>
     </section>
   )
