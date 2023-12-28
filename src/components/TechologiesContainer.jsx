@@ -46,7 +46,7 @@ const technologies = [
   { id: "react", name: "React", icon: <DiReact />, textinfo: technologies_text['react'] },
   { id: "Golang", name: "Golang", icon: <SiGoland />, textinfo: technologies_text['golang'] },
   { id: "Postgres", name: "Postgres", icon: <DiPostgresql />, textinfo: technologies_text['postgres'] },
-  { id: "CPlusPlus", name: "CPlusPlus", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
+  { id: "CPlusPlus", name: "C++", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
   { id: "Espressif", name: "Espressif", icon: <SiEspressif />, textinfo: technologies_text['espressif'] },
   { id: "aws", name: "AWS", icon: <SiAmazonaws />, textinfo: technologies_text['amazon'] },
   { id: "Flutter", name: "Flutter", icon: <SiFlutter />, textinfo: technologies_text['flutter'] },
