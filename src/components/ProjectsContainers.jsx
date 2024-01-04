@@ -1,3 +1,5 @@
+import '../styles/components/project.sass'
+
 const ProjectsContainers = () => {
   return (
     <section className="project-container">

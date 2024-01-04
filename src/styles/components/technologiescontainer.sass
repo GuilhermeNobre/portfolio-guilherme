@@ -8,6 +8,9 @@
         @include mixins.btn
         margin-top: 3rem
         margin-bottom: 1rem
+    
+    a:hover
+        @include mixins.hover-btn
 
     .technologias-grid-front
         display: flex
@@ -21,6 +24,7 @@
             border: 1px solid #333
             width: 45%
             border-radius: variables.$card-border-radius
+            border-color: variables.$color-border
             justify-content: flex-start
             flex-direction: column
             h3
@@ -28,5 +32,7 @@
                 margin-bottom: 1rem
             
             svg
-                font-size: 8rem
+                font-size: 10rem
                 color: variables.$text-color
+                padding-left: 2rem
+                
