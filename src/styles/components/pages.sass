@@ -1,0 +1,94 @@
+@use '../variables'
+@use '../mixins'
+
+
+
+#technologies-id
+    background-image: variables.$bg-background-tech-page
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+
+    section
+        display: flex
+        flex-direction: column
+        
+    h2
+        color: variables.$bg-background-color   
+        font-size: 4.2rem
+        margin-bottom: 0.5  rem
+        @include mixins.center
+        gap: 2rem
+        
+        &:after
+            // @include mixins.gradient-border
+    
+    #grad-line
+        @include mixins.center
+        @include mixins.gradient-border
+        border-radius: 5px
+        margin-bottom: 1.5rem
+        width: 50%
+        height: 5px
+        position: relative
+        left: 23%
+
+    p
+        color: variables.$text-color-secondary
+        margin-bottom: 1rem
+        line-height: 1.4rem
+        text-align: justify
+
+    a
+        @include mixins.btn
+        justify-items: center
+        width: 20%
+        text-align: center
+        margin-top: 1rem
+    
+    #title-div
+        display: flex
+        flex-direction: column
+        @include mixins.center
+
+.technologies-containter 
+    margin-bottom: 1rem
+    @include mixins.center
+
+    h2
+      @include mixins.center
+
+    .technologias-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+        justify-content: center
+
+        .technology-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 3px solid #ff0099
+            width: 30%
+            border-radius: variables.$container-border-radius
+            background: variables.$bg-color
+            transition: filter 500ms
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+            
+            svg
+                font-size: 8rem
+                color: variables.$text-color
+                
+            
+    #python:hover
+        filter: drop-shadow(0 0 1em variables.$python-colors)
+        svg
+            color: variables.$python-colors
+
+    #html:hover
+        filter: drop-shadow(0 0 1em variables.$html-colors)
+        svg
+            color: variables.$html-colors

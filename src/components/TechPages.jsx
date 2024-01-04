@@ -12,15 +12,14 @@ import {
   SiEspressif,
   SiGoland,
   SiAmazonaws,
-  SiFlutter,
-  SiKakaotalk,
+  SiFlutter
 } from "react-icons/si"
 
 import {
   TbDeviceVisionPro 
 } from "react-icons/tb"
 
-import '../styles/components/technologiescontainer.sass'
+import '../styles/components/pages.sass'
 
 const technologies_text = {
   python: "Simples e poderoso. Minha primeira linguagem de programação onde desenvolvi diversos projetos que iniciaram minha carreira de programação",
@@ -42,39 +41,44 @@ const technologies = [
   { id: "python", name: "Python", icon: <DiPython />, textinfo: technologies_text['python']},
   { id: "html", name: "HTML5", icon: <DiHtml5 />, textinfo: technologies_text['html'] },
   { id: "css", name: "CSS3", icon: <DiCss3 />, textinfo: technologies_text['css'] },
-  // { id: "js", name: "JavaScript", icon: <DiJsBadge />, textinfo: technologies_text['js'] },
-  // { id: "react", name: "React", icon: <DiReact />, textinfo: technologies_text['react'] },
-  // { id: "Golang", name: "Golang", icon: <SiGoland />, textinfo: technologies_text['golang'] },
-  // { id: "Postgres", name: "Postgres", icon: <DiPostgresql />, textinfo: technologies_text['postgres'] },
-  // { id: "CPlusPlus", name: "C++", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
-  // { id: "Espressif", name: "Espressif", icon: <SiEspressif />, textinfo: technologies_text['espressif'] },
-  // { id: "aws", name: "AWS", icon: <SiAmazonaws />, textinfo: technologies_text['amazon'] },
-  // { id: "Flutter", name: "Flutter", icon: <SiFlutter />, textinfo: technologies_text['flutter'] },
-  // { id: "visao", name: "Visual Computing", icon: <TbDeviceVisionPro />, textinfo: technologies_text['visao'] },
+  { id: "js", name: "JavaScript", icon: <DiJsBadge />, textinfo: technologies_text['js'] },
+  { id: "react", name: "React", icon: <DiReact />, textinfo: technologies_text['react'] },
+  { id: "Golang", name: "Golang", icon: <SiGoland />, textinfo: technologies_text['golang'] },
+  { id: "Postgres", name: "Postgres", icon: <DiPostgresql />, textinfo: technologies_text['postgres'] },
+  { id: "CPlusPlus", name: "C++", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
+  { id: "Espressif", name: "Espressif", icon: <SiEspressif />, textinfo: technologies_text['espressif'] },
+  { id: "aws", name: "AWS", icon: <SiAmazonaws />, textinfo: technologies_text['amazon'] },
+  { id: "Flutter", name: "Flutter", icon: <SiFlutter />, textinfo: technologies_text['flutter'] },
+  { id: "visao", name: "Visual Computing", icon: <TbDeviceVisionPro />, textinfo: technologies_text['visao'] },
 ];
 
-const TechologiesContainer = () => {
+const TechPages = () => {
   return (
-    <section className="technologies-containter-front">
-      <h2>Tecnologias</h2>
-      <div className="technologias-grid-front">
-        {technologies.map((tech) => (
-          <div className="technology-card-front" id={tech.id} key={tech.id}>
-            {tech.icon}
-            <div className="technoloy-info">
-              <h3>{tech.name}</h3>
-              <p>
-                {tech.textinfo}
-              </p>
-            </div>
-          </div>
-        ))}
+    <div id="technologies-id">
+      <div id="title-div">
+        <h2>Tecnologias</h2>
+        <div id="grad-line"/>
       </div>
-      <a href="/portfolio-guilherme/tech" className="btn" id="button-back">
-          Ver Mais
+      <section className="technologies-containter">
+        <div className="technologias-grid">
+          {technologies.map((tech) => (
+            <div className="technology-card" id={tech.id} key={tech.id}>
+              {tech.icon}
+              <div className="technoloy-info">
+                <h3>{tech.name}</h3>
+                <p>
+                  {tech.textinfo}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <a href="/portfolio-guilherme" className="btn" id="button-back">
+          Voltar
         </a>
-    </section>
+      </section>
+    </div>
   )
 }
 
-export default TechologiesContainer
+export default TechPages
