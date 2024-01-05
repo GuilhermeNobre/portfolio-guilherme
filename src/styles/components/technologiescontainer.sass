@@ -1,26 +1,38 @@
 @use '../variables'
 @use '../mixins'
 
-.technologies-containter 
+.technologies-containter-front
     margin-bottom: 1rem
+    a
+        @include mixins.center
+        @include mixins.btn
+        margin-top: 3rem
+        margin-bottom: 1rem
+    
+    a:hover
+        @include mixins.hover-btn
 
-    .technologias-grid
+    .technologias-grid-front
         display: flex
-        flex-wrap: wrap
+        // flex-wrap: wrap
         gap: 1.5rem
 
-        .technology-card
+        .technology-card-front
             @include mixins.center
             gap: 1rem
             padding: 1rem
             border: 1px solid #333
             width: 45%
             border-radius: variables.$card-border-radius
-
+            border-color: variables.$color-border
+            justify-content: flex-start
+            flex-direction: column
             h3
                 color: variables.$text-color
                 margin-bottom: 1rem
             
             svg
-                font-size: 8rem
+                font-size: 10rem
                 color: variables.$text-color
+                padding-left: 2rem
+                
