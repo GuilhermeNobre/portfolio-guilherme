@@ -6,20 +6,22 @@ import './styles/main.sass'
 
 import {
   createBrowserRouter,
+  createHashRouter,
   BrowserRouter,
-  RouterProvider
+  RouterProvider,
+  HashRouter
 } from 'react-router-dom'
 
 import TechPages from './components/TechPages.jsx'
 import Page2 from './components/Page2.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: '/portfolio-guilherme',
+    path: '/',
     element: <App/>,
   },
   {
-    path: '/portfolio-guilherme/#/tech',
+    path: '/tech',
     element: <TechPages/>,
   },
   {
@@ -30,7 +32,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

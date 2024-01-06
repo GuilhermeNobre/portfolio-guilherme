@@ -70,7 +70,7 @@ const TechologiesContainer = () => {
           </div>
         ))}
       </div>
-      <a href="/portfolio-guilherme/#/tech" className="btn" id="button-back">
+      <a href="#/tech" className="btn" id="button-back">
           Ver Mais
         </a>
     </section>
