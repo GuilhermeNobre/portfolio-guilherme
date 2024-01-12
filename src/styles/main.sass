@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins.sass'
 
 *
     padding: 0
@@ -10,3 +11,14 @@ body
     background-image: variables.$bg-background-color
 a, svg 
     transition: .8s
+
+@media (max-width: variables.$layout-smartphone-break)
+    *
+        padding: 0
+        margin: 0
+        font-family: variables.$font-stack
+        box-sizing: border-box
+        
+        
+    body 
+        background-image: variables.$bg-background-color-smartphone

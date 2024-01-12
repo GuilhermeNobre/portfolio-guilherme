@@ -35,4 +35,29 @@
                 font-size: 10rem
                 color: variables.$text-color
                 padding-left: 2rem
+
+    @media (max-width: variables.$layout-smartphone-break)
+        .technologias-grid-front
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 1.5rem
+
+            .technology-card-front
+                @include mixins.center
+                gap: 1rem
+                padding: 1rem
+                border: 1px solid #333
+                width: 100%
+                border-radius: variables.$card-border-radius
+                border-color: variables.$color-border
+                justify-content: flex-start
+                flex-direction: column
+                h3
+                    color: variables.$text-color
+                    margin-bottom: 1rem
                 
+                svg
+                    font-size: 10rem
+                    color: variables.$text-color
+                    padding-left: 2rem

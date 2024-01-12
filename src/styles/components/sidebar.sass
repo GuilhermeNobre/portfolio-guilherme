@@ -25,9 +25,13 @@
         border-radius: variables.$card-border-radius
         margin-top: 14rem
         padding: .8rem 1.2rem
-    
+        @media (max-width: variables.$layout-smartphone-break)
+            margin-top: 12rem
     .btn
         @include mixins.btn
+
+        @media (max-width: variables.$layout-smartphone-break)
+            width: 80%
 
     a:hover
         @include mixins.hover-btn
