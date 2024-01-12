@@ -23,6 +23,14 @@
         &:after
             // @include mixins.gradient-border
     
+    @media (max-width: variables.$layout-smartphone-break)
+        h2
+            color: #f3efef
+            font-size: 3rem
+            margin-bottom: 0.5  rem
+            @include mixins.center
+            gap: 2rem
+            
     #grad-line
         @include mixins.center
         @include mixins.gradient-border
@@ -46,6 +54,8 @@
         text-align: center
         margin-top: 1rem
         font-size: 1rem
+        @media (max-width: variables.$layout-smartphone-break)
+            margin-top: 2.5rem
     
     a:hover
         @include mixins.hover-btn
@@ -56,6 +66,7 @@
         flex-direction: column
         @include mixins.center
 
+    
 .technologies-containter 
     margin-bottom: 1rem
     @include mixins.center
@@ -86,7 +97,33 @@
             svg
                 font-size: 8rem
                 color: variables.$text-color
+
+    @media (max-width: variables.$layout-smartphone-break)
+        .technologias-grid
+            display: flex
+            flex-wrap: nowrap
+            flex-direction: column
+            align-items: center
+            gap: 1.5rem
+            justify-content: center
+
+            .technology-card
+                @include mixins.center
+                gap: 1rem
+                padding: 1rem
+                border: 3px solid variables.$color-border
+                width: 95%
+                border-radius: variables.$container-border-radius
+                background: variables.$bg-color
+                transition: filter 500ms
+
+                h3
+                    color: variables.$text-color
+                    margin-bottom: 1rem
                 
+                svg
+                    font-size: 8rem
+                    color: variables.$text-color         
             
     #python:hover
         filter: drop-shadow(0 0 1em variables.$python-colors)
