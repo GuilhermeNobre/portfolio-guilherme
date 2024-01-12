@@ -9,6 +9,9 @@
 
 body
     background-image: variables.$bg-background-color
+
+
+
 a, svg 
     transition: .8s
 
@@ -18,7 +21,13 @@ a, svg
         margin: 0
         font-family: variables.$font-stack
         box-sizing: border-box
-        
+
+    a, svg 
+        transition: .8s
         
     body 
-        background-image: variables.$bg-background-color-smartphone
+        background-image: variables.$bg-background-color
+
+    @media (max-width: variables.$smart-smartphone-break)
+        body 
+          background-image: variables.$bg-background-color
