@@ -23,10 +23,23 @@
         color: variables.$text-color-secondary
         background-color: variables.$bg-color-secondary
         border-radius: variables.$card-border-radius
-        margin-top: 14rem
+        margin-top: 23rem
         padding: .8rem 1.2rem
-        @media (max-width: variables.$layout-smartphone-break)
-            margin-top: 12rem
+        @media (max-width: variables.$beyond-fourk-screen-break) and (min-width: variables.$fourk-screen-break)
+            margin-top: 31rem
+        @media (max-width: variables.$fourk-screen-break) and (min-width: variables.$fullhd-screen-break)
+            margin-top: 22rem
+        @media (max-width: variables.$fullhd-screen-break) and (min-width: variables.$laptop-screen-break)
+            margin-top: 13rem
+        @media (max-width: variables.$laptop-screen-break) and (min-width: variables.$smart-smartphone-break)
+            margin-top: 38rem
+        @media (max-width: 800px) and (min-width: 427px)
+            margin-top: 32rem
+        @media (max-width: 426px) and (min-width: variables.$smart-smartphone-break)
+            margin-top: 14rem
+        @media (max-width: variables.$smart-smartphone-break)
+            margin-top: 13rem
+        
     .btn
         @include mixins.btn
 

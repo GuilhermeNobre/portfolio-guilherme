@@ -20,6 +20,7 @@ import {
 } from "react-icons/tb"
 
 import '../styles/components/pages.sass'
+import { useEffect } from "react";
 
 const technologies_text = {
   python: "Simples e poderoso. Minha primeira linguagem de programação onde desenvolvi diversos projetos que iniciaram minha carreira de programação",
@@ -53,6 +54,16 @@ const technologies = [
 ];
 
 const TechPages = () => {
+
+  useEffect(() => {
+    console.log("Page loaded");
+    goTopPage();
+  }, [])
+
+  function goTopPage() {
+    window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+  }
+
   return (
     <div id="technologies-id">
       <div id="title-div">
