@@ -5,15 +5,12 @@ import App from './App.jsx'
 import './styles/main.sass'
 
 import {
-  createBrowserRouter,
   createHashRouter,
-  BrowserRouter,
   RouterProvider,
-  HashRouter
 } from 'react-router-dom'
 
 import TechPages from './components/TechPages.jsx'
-import Page2 from './components/Page2.jsx'
+// import Page2 from './components/Page2.jsx'
 
 const router = createHashRouter([
   {
@@ -24,10 +21,10 @@ const router = createHashRouter([
     path: '/tech',
     element: <TechPages/>,
   },
-  {
-    path: '/portfolio-guilherme/page2',
-    element: <Page2/>,
-  }
+  // {
+  //   path: '/portfolio-guilherme/page2',
+  //   element: <Page2/>,
+  // }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
