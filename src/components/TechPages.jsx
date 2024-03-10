@@ -21,6 +21,8 @@ import {
 
 import '../styles/components/pages.sass'
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 const technologies_text = {
   python: "Simples e poderoso. Minha primeira linguagem de programação onde desenvolvi diversos projetos que iniciaram minha carreira de programação",
@@ -54,6 +56,7 @@ const technologies = [
 ];
 
 const TechPages = () => {
+  // const history = useHistory();
 
   useEffect(() => {
     console.log("Page loaded");
@@ -84,9 +87,7 @@ const TechPages = () => {
             </div>
           ))}
         </div>
-        <a href="/portfolio-guilherme" className="btn" id="button-back">
-          Voltar
-        </a>
+          <Link className="btn" id="button-back" to="/" >Voltar</Link>
       </section>
     </div>
   )
