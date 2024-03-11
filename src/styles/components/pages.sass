@@ -3,9 +3,9 @@
 
 
 #technologies-id
-    background-image: variables.$bg-background-tech-page
+    // background-image: variables.$bg-background-tech-page
+    background-attachment: fixed
     flex: 2 1 0
-    border-radius: variables.$container-border-radius
     padding: 3rem
 
     section
@@ -13,12 +13,14 @@
         flex-direction: column
         align-items: center
         
-    h2
-        color: #f3efef
-        font-size: 4.2rem
-        margin-bottom: 0.5  rem
+    h2 // TODO: Fix bug where blur all row
+        font-size: 4.2rem 
+        padding: 0.5rem
         @include mixins.center
-        gap: 2rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        backdrop-filter: blur(10px) 
         
         &:after
             // @include mixins.gradient-border
@@ -29,7 +31,6 @@
             font-size: 3rem
             margin-bottom: 0.5  rem
             @include mixins.center
-            gap: 2rem
             
     #grad-line
         @include mixins.center

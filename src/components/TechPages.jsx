@@ -22,7 +22,7 @@ import {
 import '../styles/components/pages.sass'
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import NET from 'vanta/src/vanta.net'
 
 const technologies_text = {
   python: "Simples e poderoso. Minha primeira linguagem de programação onde desenvolvi diversos projetos que iniciaram minha carreira de programação",
@@ -56,39 +56,57 @@ const technologies = [
 ];
 
 const TechPages = () => {
-  // const history = useHistory();
 
   useEffect(() => {
-    console.log("Page loaded");
-    goTopPage();
+    NET({
+      el: "#background-wave",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff3c7d,
+      backgroundColor: 0x251741,
+      points: 20.00,
+      maxDistance: 19.00
+    })
   }, [])
 
-  function goTopPage() {
-    window.scrollTo({top: 0, left: 0, behavior: "smooth"});
-  }
+  // useEffect(() => {
+  //   goTopPage();
+  // }, [])
+
+
+  // function goTopPage() {
+  //   window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+  // }
 
   return (
-    <div id="technologies-id">
-      <div id="title-div">
-        <h2>Tecnologias</h2>
-        <div id="grad-line"/>
-      </div>
-      <section className="technologies-containter">
-        <div className="technologias-grid">
-          {technologies.map((tech) => (
-            <div className="technology-card" id={tech.id} key={tech.id}>
-              {tech.icon}
-              <div className="technoloy-info">
-                <h3>{tech.name}</h3>
-                <p>
-                  {tech.textinfo}
-                </p>
-              </div>
-            </div>
-          ))}
+    <div className="bg" id="background-wave">
+      <div id="technologies-id">
+        <div id="title-div">
+          <h2>Tecnologias</h2>
+          <div id="grad-line"/>
         </div>
-          <Link className="btn" id="button-back" to="/" >Voltar</Link>
-      </section>
+        <section className="technologies-containter">
+          <div className="technologias-grid">
+            {technologies.map((tech) => (
+              <div className="technology-card" id={tech.id} key={tech.id}>
+                {tech.icon}
+                <div className="technoloy-info">
+                  <h3>{tech.name}</h3>
+                  <p>
+                    {tech.textinfo}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+            <Link className="btn" id="button-back" to="/" >Voltar</Link>
+        </section>
+      </div>
     </div>
   )
 }
