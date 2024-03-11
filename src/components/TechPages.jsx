@@ -74,14 +74,14 @@ const TechPages = () => {
     })
   }, [])
 
-  // useEffect(() => {
-  //   goTopPage();
-  // }, [])
+  useEffect(() => {
+    goTopPage();
+  }, [])
 
 
-  // function goTopPage() {
-  //   window.scrollTo({top: 0, left: 0, behavior: "smooth"});
-  // }
+  function goTopPage() {
+    window.scrollTo({top: 0, left: 0, behavior: "smooth"});
+  }
 
   return (
     <div className="bg" id="background-wave">
