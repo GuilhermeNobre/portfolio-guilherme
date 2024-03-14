@@ -59,7 +59,7 @@ const TechPages = () => {
 
   useEffect(() => {
     NET({
-      el: "#background-wave",
+      el: "#background-vanta",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -70,7 +70,7 @@ const TechPages = () => {
       color: 0xff3c7d,
       backgroundColor: 0x251741,
       points: 20.00,
-      maxDistance: 19.00
+      maxDistance: 13.00
     })
   }, [])
 
@@ -84,7 +84,7 @@ const TechPages = () => {
   }
 
   return (
-    <div className="bg" id="background-wave">
+    <div className="bg" id="background-vanta">
       <div id="technologies-id">
         <div id="title-div">
           <h2>Tecnologias</h2>

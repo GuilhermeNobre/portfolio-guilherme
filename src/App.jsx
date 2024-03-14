@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 function App() {
   useEffect(() => { 
     GLOBE({
-      el: "#portfolio",
+      el: "#background-vanta",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
@@ -28,10 +28,14 @@ function App() {
   }, [])
 
   return (
-    <div className='bg' id="portfolio">
-      <h1>Guilherme Guimarães Dantas</h1>
-      <Sidebar/>
-      <MainContent/>
+    <div id="background-vanta">
+      <div>
+          <h1>Guilherme Guimarães Dantas</h1>
+      </div>
+      <div className='bg' id="portfolio">
+        <Sidebar/>
+        <MainContent/>
+      </div>
     </div>
     
   )

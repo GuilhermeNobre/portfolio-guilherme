@@ -8,23 +8,24 @@
     flex: 2 1 0
     padding: 3rem
 
+    #title-div
+        text-align: center
+
     section
         display: flex
         flex-direction: column
         align-items: center
         
-    h2 // TODO: Fix bug where blur all row
+    h2
+        display: inline-flex
         font-size: 4.2rem 
         padding: 0.5rem
-        @include mixins.center
+        // @include mixins.center
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
         backdrop-filter: blur(10px) 
-        
-        &:after
-            // @include mixins.gradient-border
-    
+
     @media (max-width: variables.$layout-smartphone-break)
         h2
             color: #f3efef
@@ -62,12 +63,6 @@
         @include mixins.hover-btn
 
 
-    #title-div
-        display: flex
-        flex-direction: column
-        @include mixins.center
-
-    
 .technologies-containter 
     margin-bottom: 1rem
     @include mixins.center
