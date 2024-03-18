@@ -46,13 +46,13 @@ const technologies = [
   { id: "css", name: "CSS3", icon: <DiCss3 />, textinfo: technologies_text['css'] },
   { id: "js", name: "JavaScript", icon: <DiJsBadge />, textinfo: technologies_text['js'] },
   { id: "react", name: "React", icon: <DiReact />, textinfo: technologies_text['react'] },
-  { id: "Golang", name: "Golang", icon: <SiGoland />, textinfo: technologies_text['golang'] },
-  { id: "Postgres", name: "Postgres", icon: <DiPostgresql />, textinfo: technologies_text['postgres'] },
-  { id: "CPlusPlus", name: "C++", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
-  { id: "Espressif", name: "Espressif", icon: <SiEspressif />, textinfo: technologies_text['espressif'] },
+  { id: "golang", name: "Golang", icon: <SiGoland />, textinfo: technologies_text['golang'] },
+  { id: "postgres", name: "Postgres", icon: <DiPostgresql />, textinfo: technologies_text['postgres'] },
+  { id: "cplusplus", name: "C++", icon: <SiCplusplus />, textinfo: technologies_text['cplusplus'] },
+  { id: "espressif", name: "Espressif", icon: <SiEspressif />, textinfo: technologies_text['espressif'] },
   { id: "aws", name: "AWS", icon: <SiAmazonaws />, textinfo: technologies_text['amazon'] },
-  { id: "Flutter", name: "Flutter", icon: <SiFlutter />, textinfo: technologies_text['flutter'] },
-  { id: "visao", name: "Visual Computing", icon: <TbDeviceVisionPro />, textinfo: technologies_text['visao'] },
+  { id: "flutter", name: "Flutter", icon: <SiFlutter />, textinfo: technologies_text['flutter'] },
+  { id: "visualcomputing", name: "Visual Computing", icon: <TbDeviceVisionPro />, textinfo: technologies_text['visao'] },
 ];
 
 const TechPages = () => {
