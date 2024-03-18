@@ -120,63 +120,40 @@
                 svg
                     font-size: 8rem
                     color: variables.$text-color         
-            
-    #python:hover
-        filter: drop-shadow(0 0 1em variables.$python-colors)
-        svg
-            color: variables.$python-colors
 
+
+    #python:hover
+        @include mixins.hover-effect(variables.$python-colors)
+        
     #html:hover
-        filter: drop-shadow(0 0 1em variables.$html-colors)
-        svg
-            color: variables.$html-colors
+        @include mixins.hover-effect(variables.$html-colors)
 
     #css:hover
-        filter: drop-shadow(0 0 1em variables.$css-colors)
-        svg
-            color: variables.$css-colors
+        @include mixins.hover-effect(variables.$css-colors)
 
     #js:hover
-        filter: drop-shadow(0 0 1em variables.$javascript-colors)
-        svg
-            color: variables.$javascript-colors
-    
+        @include mixins.hover-effect(variables.$javascript-colors)
+
     #react:hover
-        filter: drop-shadow(0 0 1em variables.$react-colors)
-        svg
-            color: variables.$react-colors
+        @include mixins.hover-effect(variables.$react-colors)
     
     #golang:hover
-        filter: drop-shadow(0 0 1em variables.$golang-colors)
-        svg
-            color: variables.$golang-colors
+        @include mixins.hover-effect(variables.$golang-colors)
 
     #postgres:hover
-        filter: drop-shadow(0 0 1em variables.$postgres-colors)
-        svg
-            color: variables.$postgres-colors
+        @include mixins.hover-effect(variables.$postgres-colors)
     
     #cplusplus:hover
-        filter: drop-shadow(0 0 1em variables.$cplusplus-colors)
-        svg
-            color: variables.$cplusplus-colors
-    
+        @include mixins.hover-effect(variables.$cplusplus-colors)
+        
     #aws:hover
-        filter: drop-shadow(0 0 1em variables.$aws-colors)
-        svg
-            color: variables.$aws-colors
+        @include mixins.hover-effect(variables.$aws-colors)
 
     #espressif:hover
-        filter: drop-shadow(0 0 1em variables.$espressif-colors)
-        svg
-            color: variables.$espressif-colors
-    
+        @include mixins.hover-effect(variables.$espressif-colors)
+
     #flutter:hover
-        filter: drop-shadow(0 0 1em variables.$flutter-colors)
-        svg
-            color: variables.$flutter-colors
+        @include mixins.hover-effect(variables.$flutter-colors)
     
     #visualcomputing:hover
-        filter: drop-shadow(0 0 1em variables.$visualcomputing-colors)
-        svg
-            color: variables.$visualcomputing-colors
+        @include mixins.hover-effect(variables.$visualcomputing-colors)

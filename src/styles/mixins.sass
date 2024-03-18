@@ -25,3 +25,9 @@
     filter: drop-shadow(0 0 1em variables.$color-border)
     font-size: 1.3rem
     
+@mixin  hover-effect($color-variable)
+    &:hover
+        filter: drop-shadow(0 0 1em $color-variable)
+        svg
+            color: $color-variable
+    
