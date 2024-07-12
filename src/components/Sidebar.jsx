@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Guilherme Dantas" />
-      <p className="title">Desenvolvedor IoT</p>
+      <p className="title">Desenvolvedor IoT e Software</p>
       <SocialNetwork/>
       <InformationContainer/>
       <a id="btn-cv" href={Curriculm} download="Guilherme Dantas Currículo" className="btn">
